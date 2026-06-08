@@ -1,6 +1,5 @@
 // Получаем элементы управления из DOM
 const cardRecolorButton = document.querySelector(".product-section__action-all"); 
-const catalogCard = document.querySelectorAll(".product-card__inner");
 const cardActionButtons = document.querySelectorAll(".product-card__action");
 const resetColorCard = document.querySelector('.product-section__reset');
 
@@ -24,31 +23,34 @@ function changeRandomColor() {
 
 // Сбрасывает фон всех карточек к состоянию по умолчанию
 resetColorCard.addEventListener("click", () => {
+    const catalogCard = document.querySelectorAll(".product-card__inner");
     catalogCard.forEach(body => {
         body.style.backgroundColor = "";
     });
 });
 
 //  Перекрашивает все карточки в случайный цвет
-const catalogCards = document.querySelectorAll(".product-card__inner");
 const sectionActionButton = document.querySelector(".product-section__action-all"); 
 
 sectionActionButton.addEventListener("click", () => {
+    const catalogCards = document.querySelectorAll(".product-card__inner");
     catalogCards.forEach(body => {
         body.style.backgroundColor = changeRandomColor();
     });
 });
 
 // Обрабатывает кнопки внутри карточек и меняет цвет только своей карточки
-cardActionButtons.forEach(button => {
-    button.addEventListener("click", () => {
+const productListContainer = document.getElementById('product-list');
+
+productListContainer.addEventListener('click', (event) => {
+    if (event.target.classList.contains('product-card__action')) {
+        const button = event.target;
         const parentBox = button.closest(".product-card__content");
         const body = parentBox.querySelector(".product-card__inner");
 
         body.style.backgroundColor = changeRandomColor();
-    });
+    }
 });
-
 // Выводит текст заголовка страницы в консоль при наведении
 const headerOutput = document.querySelector(".js-title");
 
