@@ -14,7 +14,10 @@
  <section class="product-section">
   <div class="product-background"></div>
     <div class="product-cards">
-      <button class="product-section__toggle">АКТИВНО</button>
+      <button class="product-section__toggle">Активно</button>
+       <div class="color-control-panel">
+        <button class="registration-button">Регистрация</button>
+      </div>
       <button class="product-section__action-all">Перекрасить все карточки</button> 
       <button class="product-section__reset">Сброс цветов</button>
       <h1 class="js-title title">Выбери свой продукт</h1>
@@ -44,12 +47,117 @@
     </div>
   </div>
 </template>
+
+</template>
+
+  <div id="overlay" class="modal-backdrop"></div>
   
+  <div id="modal" class="popup-window">
+    <div class="popup-box-content">
+      <button id="closemodal-button" class="popup-dismiss-btn">&times;</button>
+      
+      <form id="registration-form" class="signup-form-container">
+        <h2 class="registration-form-title">Регистрация</h2>
+        
+        <div class="form-input-group">
+          <label for="name">Введите имя:</label>
+          <input type="text" name="name" id="name" placeholder="Имя" required />
+        </div>
+        
+        <div class="form-input-group">
+          <label for="secondName">Введите фамилию:</label>
+          <input type="text" name="secondName" id="secondName" placeholder="Фамилия" required />
+        </div>
+        
+        <div class="form-input-group">
+          <label for="birthDate">Дата Рождения:</label>
+          <input type="date" name="birthDate" id="birthDate" required />
+        </div>
+        
+        <div class="form-input-group">
+          <label for="login">Логин</label>
+          <input type="text" name="login" id="login" placeholder="логин" required />
+        </div>
+        
+        <div class="form-input-group">
+          <label for="password">Пароль</label>
+          <input type="password" name="password" id="password" placeholder="пароль" required />
+        </div>
+        
+        <div class="form-input-group">
+          <label for="confirmPassword">Подтвердите пароль</label>
+          <input type="password" name="confirmPassword" id="confirmPassword" placeholder="подтвердите пароль" required />
+        </div>
+        
+        <button class="submit-form-button" type="submit">
+          Зарегистрироваться
+        </button>
+      </form>
+    </div>
+  </div>
+
+<footer class="footer-section">
+  <div class="footer-wrapper">
+    <div class="footer-branding-block">
+      <div class="footer-identity">
+        <p class="footer-main-logo">Product Cards</p>
+        <p class="footer-subtext">
+          У нас самые лучшие продукты для кожи!
+        </p>
+        <div class="social-links-wrap">
+          <a href="https://t.me/SoulGooddman" target="_blank">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+          <a href="https://vk.com" target="_blank">
+            <i class="fa-brands fa-vk"></i>
+          </a>
+        </div>
+      </div>
+
+      <form class="newsletter-form">
+        <label class="subscribe-input-label">Подпишись на наши акции:</label>
+        <div class="subscribe-input-field">
+          <input
+            type="email"
+            name="email"
+            placeholder="Введи Email..."
+            required
+          />
+          <span class="vertical-divider">|</span>
+          <button type="submit">Подписаться</button>
+        </div>
+      </form>
+      <nav class="footer-navigation">
+        <p class="navigation-title">Быстрые ссылки</p>
+        <ul class="navigation-list">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-copyright-block">
+      <div class="footer-separator-line"></div>
+      <p class="footer-legal-text">
+        www.product-cards.com © all rights reserved
+      </p>
+    </div>
+  </div>
+</footer>
+
+<div id="overlay" class="modal-backdrop"></div>
+<div id="modal" class="popup-window">
+  <div class="popup-box-content">
+    <button id="closemodal-button" class="popup-dismiss-btn">&times;</button>
+    </div>
+</div>
+
   <script src="./script.js"></script>
   <script src="./homework-5/homework-5.js"></script>
   <script src="./homework-6/homework-6.js"></script>
   <script src="./homework-7/homework-7.js" type="module"></script>
   <script src="./homework-8/homework-8.js" type="module"></script>
+  <script src="./homework-9/homework-9.js" type="module"></script>
 
 </body>
 </html>
