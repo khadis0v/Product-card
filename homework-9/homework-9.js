@@ -1,4 +1,3 @@
-// 3 Сверстать footer, используя семантические теги (footer, nav и т.д.)
 // 4 К Форме, которая прикреплена в футере - добавить логику:
 // email должен соответствовать стандартам (добавить валидацию).
 const userSubscribeForm = document.querySelector('.newsletter-form');
