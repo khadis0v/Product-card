@@ -56,7 +56,7 @@ const visibleProducts = products.slice(0, count);
 renderProducts(visibleProducts);
 
 
-// 4 4. Используя метод .reduce(), получить массив объектов,
+// 4 Используя метод .reduce(), получить массив объектов,
 // где ключем является название продукта, а значением - его описание.
 const productsDescriptionsArray = products.reduce((acc, product) => {
   acc.push({ 
