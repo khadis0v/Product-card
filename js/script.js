@@ -1,3 +1,4 @@
+
 // Получаем элементы управления из DOM
 const cardRecolorButton = document.querySelector(".product-section__action-all"); 
 const cardActionButtons = document.querySelectorAll(".product-card__action");
