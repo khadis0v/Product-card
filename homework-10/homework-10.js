@@ -13,7 +13,6 @@ hermes.getInfo();
 // 10.4 Создать файл Modal.js и в нем создать класс для модального окна.
 import Modal from './classes/Modal.js';
 const registrationModal = new Modal('#modal', '#overlay');
-
 const openSignUpBtn = document.querySelector('.registration-button');
 
 if (openSignUpBtn) {

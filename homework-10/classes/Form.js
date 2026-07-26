@@ -7,7 +7,6 @@ export default class Form {
   // Метод I: Получение всех значений формы.
   getValues() {
     if (!this.form) return {};
-
     const formData = new FormData(this.form);
     return Object.fromEntries(formData.entries());
   }
@@ -21,7 +20,6 @@ export default class Form {
   // Метод III: Сброс значений формы.
   reset() {
     if (this.form) {
-
     }
   }
 
