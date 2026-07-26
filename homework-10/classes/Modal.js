@@ -17,7 +17,7 @@ export default class Modal {
   // Метод II: Закрытие модального окна.
   close() {
     this.modal.classList.remove('visible-popup');
-    if(this.overlay) {
+    if (this.overlay) {
       this.overlay.style.display = 'none';
     }
   }
@@ -26,8 +26,8 @@ export default class Modal {
   // В дальнейшем может пригодиться для всяких фич.
   // Например, если мы захотим сделать чтоб модалка закрывалась кнопкой ESC.
   isOpen() {
-      return this.modal.classList.contains('visible-popup');
-    }
+    return this.modal.classList.contains('visible-popup');
+  }
 
   // Метод IV: Слушает кнопку (крестик).
   initCloseListener() {

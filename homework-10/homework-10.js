@@ -1,7 +1,7 @@
 
 // 10.3 Импортируем классы-наследники
-import {Shirt} from './classes/Shirt.js';
-import {Trousers} from './classes/Trousers.js';
+import { Shirt } from './classes/Shirt.js';
+import { Trousers } from './classes/Trousers.js';
 
 const armani = new Trousers('L', 350, 'High Waist');
 const hermes = new Shirt('M', 200, 'Spread Collar');

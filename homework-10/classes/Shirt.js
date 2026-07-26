@@ -1,4 +1,4 @@
-import {Clothing} from './Clothing.js';
+import { Clothing } from './Clothing.js';
 
 export class Shirt extends Clothing {
   constructor(size, price, collartype) {
