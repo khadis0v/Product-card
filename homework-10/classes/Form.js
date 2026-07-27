@@ -20,6 +20,7 @@ export default class Form {
   // Метод III: Сброс значений формы.
   reset() {
     if (this.form) {
+      this.form.reset();
     }
   }
 
