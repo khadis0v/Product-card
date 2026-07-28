@@ -10,6 +10,8 @@ userSubscribeForm.addEventListener('submit', (event) => {
 });
 
 
+/* Перезаписал эту логику. Смотреть в 10-м задании.
+
 // 5 Создать кнопку "Регистрация". Создать модальное окно,
 // используя классы "modal, modal-showed".
 const openSignUpBtn = document.querySelector('.registration-button');
@@ -53,4 +55,4 @@ signUpFormElement.addEventListener('submit', (event) => {
 
   console.log('Регистрация успешна', registeredUserObj);
   disablePopup();
-});
+}); */
