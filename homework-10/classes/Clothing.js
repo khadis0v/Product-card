@@ -6,6 +6,6 @@ export class Clothing {
   };
 
   getInfo() {
-    console.log(`Size: ${this.size}, Price: $${this.price}`);
+    // console.log(`Size: ${this.size}, Price: $${this.price}`);
   }
 };
