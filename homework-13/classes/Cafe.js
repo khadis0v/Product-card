@@ -11,7 +11,7 @@ export class Cafe {
   }
 
   orderDrink(drink) {
-  drink.prepare();
-  drink.serve();
-}
+    drink.prepare();
+    drink.serve();
+  }
 }
