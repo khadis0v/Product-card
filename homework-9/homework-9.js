@@ -6,7 +6,7 @@ userSubscribeForm.addEventListener('submit', (event) => {
   const currentForm = event.target;
   const collectedFields = new FormData(currentForm);
   const textFieldsData = Object.fromEntries(collectedFields.entries());
-  console.log(textFieldsData);
+  // console.log(textFieldsData);
 });
 
 

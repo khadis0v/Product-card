@@ -7,6 +7,6 @@ export class Trousers extends Clothing {
   }
 
   getInfo() {
-    console.log(`Size: ${this.size}, Price: $${this.price}, Waist Type: ${this.waistType}`);
+    // console.log(`Size: ${this.size}, Price: $${this.price}, Waist Type: ${this.waistType}`);
   }
 };
