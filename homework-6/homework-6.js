@@ -21,7 +21,7 @@ const carInfo = {
   transmission: "Ручная",
 };
 carInfo.owner = userData;
-// console.log(carInfo);
+console.log(carInfo);
 
 
 // 6.5 Функция проверки наличия свойства "Максимальная скорость"
@@ -32,13 +32,13 @@ function checkMaxSpeed(car) {
 }
 
 checkMaxSpeed(carInfo);
-// console.log(carInfo.maxSpeed);
+console.log(carInfo.maxSpeed);
 
 
 // 6.6 Универсальная функция для поиска определенного свойства внутри объекта 
 function getInfoUser (allInfoUser, specificInformation) {
   const info = allInfoUser[specificInformation];
-  // console.log(info);
+  console.log(info);
 }
 
 getInfoUser(userData, 'lastName');
@@ -81,7 +81,7 @@ libraryCatalog.push({
   genre: "драма"
 });
 
-// console.log(libraryCatalog);
+console.log(libraryCatalog);
 
 
 // 6.9 Создание второго массива "Вселенная Толкина" и объединение списков
@@ -111,7 +111,7 @@ const tolkiensUniverse = [
 
 // Объединяем каталог классики и вселенную Толкина в один большой массив
 const generalLibrary = [...libraryCatalog, ...tolkiensUniverse];
-// console.log(generalLibrary);
+console.log(generalLibrary);
 
 
 //Функция с использованием метода map
@@ -122,4 +122,4 @@ const rareBooks = generalLibrary.map(book => {
   };
 });
 
-// console.log(rareBooks);
+console.log(rareBooks);

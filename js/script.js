@@ -56,7 +56,7 @@ productListContainer.addEventListener('click', (event) => {
 const headerOutput = document.querySelector(".js-title");
 
 headerOutput.addEventListener("mouseover", () => {
-    // console.log(headerOutput.innerText);
+    console.log(headerOutput.innerText);
 });
 
 // Переключает состояние кнопки и отображает активный / неактивный статус

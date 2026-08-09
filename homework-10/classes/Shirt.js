@@ -7,6 +7,6 @@ export class Shirt extends Clothing {
   }
 
   getInfo() {
-    // console.log(`Size: ${this.size}, Price: $${this.price}, Collar Type: ${this.collartype}`);
+    console.log(`Size: ${this.size}, Price: $${this.price}, Collar Type: ${this.collartype}`);
   }
 };

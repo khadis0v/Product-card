@@ -34,7 +34,7 @@ if (signUpFormElement) {
       const accountInfo = registrationForm.getValues();
 
       if (accountInfo.password !== accountInfo.confirmPassword) {
-        // console.log('Ошибка: Пароли не совпадают!');
+        console.log('Ошибка: Пароли не совпадают!');
         return;
       }
 
@@ -43,12 +43,12 @@ if (signUpFormElement) {
         createdOn: new Date(),
       };
 
-      // console.log('Регистрация успешно завершена:', registeredUserObj);
+      console.log('Регистрация успешно завершена:', registeredUserObj);
 
       registrationForm.reset();
       registrationModal.close();
     } else {
-      // console.log('Ошибка: Форма заполнена некорректно.');
+      console.log('Ошибка: Форма заполнена некорректно.');
     }
   });
 }

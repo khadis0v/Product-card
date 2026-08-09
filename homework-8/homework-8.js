@@ -65,4 +65,4 @@ const productsDescriptionsArray = products.reduce((acc, product) => {
   return acc;
 }, []);
 
-// console.log(productsDescriptionsArray);
+console.log(productsDescriptionsArray);
