@@ -26,10 +26,10 @@ export default class Drink {
 
   // Метод 4. Приготовить напиток (приватный)
   #prepare() {
-    console.log(`Проверка заказа`);
+    // console.log(`Проверка заказа`);
 
     setTimeout(() => {
-      console.log(`Напиток готовится`);
+      // console.log(`Напиток готовится`);
     }, 1500);
 
   }
@@ -39,7 +39,7 @@ export default class Drink {
     this.#prepare();
 
     setTimeout(() => {
-      console.log(`Ваш ${this.name} готов! Можете забирать заказ.`);
+      // console.log(`Ваш ${this.name} готов! Можете забирать заказ.`);
     }, 7500);
   }
 }

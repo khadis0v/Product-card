@@ -11,7 +11,6 @@ const mojito = new Lemonade('Мохито', 400, 250, 'Лайм', 'Да');
 
 
 // 13.4.3 Вызов трех готовых методов.
-console.log(mojito.getInfo());
+// console.log(mojito.getInfo());
 favoriteCafe.showCafeInfo();
 favoriteCafe.orderDrink(mojito);
-
