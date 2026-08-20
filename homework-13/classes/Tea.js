@@ -17,19 +17,19 @@ export class Tea extends Drink {
     this.setTemp(90);
 
     setTimeout(() => {
-      console.log('Греем воду до 90°C');
+      // console.log('Греем воду до 90°C');
     }, 3000);
   }
 
   brew() {
     setTimeout(() => {
-      console.log(`Завариваем чай сорта: ${this.cultivar}`);
+      // console.log(`Завариваем чай сорта: ${this.cultivar}`);
     }, 4500);
   }
 
   steep() {
     setTimeout(() => {
-      console.log(`Даем ему немного настояться`);
+      // console.log(`Даем ему немного настояться`);
     }, 6000);
   }
 

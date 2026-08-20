@@ -7,7 +7,7 @@ import { products } from "./products.js";
 const productTemplate = document.getElementById('product-template');
 const productList = document.getElementById('product-list');
 
-
+/* Убрал Prompt с сайта.
 // 5.1 Реализовать функцию, которая будет создавать карточки продуктов
 // на основе шаблона и данных из массива объектов.
 function getCardsCount() {
@@ -53,7 +53,7 @@ function renderProducts(arrayOfProducts) {
 // Вызов этой функции
 const count = getCardsCount();
 const visibleProducts = products.slice(0, count);
-renderProducts(visibleProducts);
+renderProducts(visibleProducts); */
 
 
 // 4 Используя метод .reduce(), получить массив объектов,
