@@ -19,25 +19,25 @@ export class Coffee extends Drink {
     this.setTemp(75);
 
     setTimeout(() => {
-      console.log('Греем воду до 75°C');
+      // console.log('Греем воду до 75°C');
     }, 3000);
   }
 
   grindBeans() {
     setTimeout(() => {
-      console.log(`Производим помол зерен ${this.grainType}`);
+      // console.log(`Производим помол зерен ${this.grainType}`);
     }, 4000);
   }
 
   setRoast() {
     setTimeout(() => {
-      console.log(`Устанавливаем ${this.roastLevel} уровень их прожарки `);
+      // console.log(`Устанавливаем ${this.roastLevel} уровень их прожарки `);
     }, 5000);
   }
 
   addMilk() {
     setTimeout(() => {
-      console.log(`Добавляем ${this.milkType} молоко`);
+      // console.log(`Добавляем ${this.milkType} молоко`);
     }, 6000);
   }
 

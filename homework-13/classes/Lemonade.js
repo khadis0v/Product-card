@@ -16,7 +16,7 @@ export class Lemonade extends Drink {
 
   crushIngredient() {
     setTimeout(() => {
-      console.log(`Измельчаем ${this.mainIngredient}`);
+      // console.log(`Измельчаем ${this.mainIngredient}`);
     }, 3000);
   }
 
@@ -24,7 +24,7 @@ export class Lemonade extends Drink {
     this.setTemp(10);
 
     setTimeout(() => {
-      console.log('Добавляем лед');
+      // console.log('Добавляем лед');
     }, 5000);
   }
 

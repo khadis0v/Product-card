@@ -7,7 +7,7 @@ export class Cafe {
   }
 
   showCafeInfo() {
-    console.log(`Название кафе: ${this.name}, Локация: ${this.location}`);
+    // console.log(`Название кафе: ${this.name}, Локация: ${this.location}`);
   }
 
   orderDrink(drink) {
