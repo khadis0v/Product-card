@@ -23,8 +23,6 @@ export default class Modal {
   }
 
   // Метод III: Проверка, открыто ли сейчас окно.
-  // В дальнейшем может пригодиться для всяких фич.
-  // Например, если мы захотим сделать чтоб модалка закрывалась кнопкой ESC.
   isOpen() {
     return this.modal.classList.contains('visible-popup');
   }

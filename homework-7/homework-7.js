@@ -40,8 +40,7 @@ const updatedComments = comments.map(comment => ({
 }));
 
 // console.log(updatedComments); 
-//Комментарии с id от 1 до 5 получили postId 2,
-//а остальные, от 6 до 10 получили postId 1
+
 
 
 //2.9
@@ -51,8 +50,7 @@ const formattedComments = comments.map(comment => ({
 }));
 
 // console.log(formattedComments);
-//Вывелись объекты с id и name всех комментариев, 
-//без полей postId, email и body
+
 
 
 //2.10
@@ -62,9 +60,6 @@ const validatedComments = comments.map(comment => ({
 }));
 
 // console.log(validatedComments);
-//Комментариq с id 3 получил isInvalid: true, 
-//а остальные 9 - isInvalid: false.
-
 
 
 
@@ -80,8 +75,6 @@ const emailsByReduce = comments.reduce((acc, comment) => [
 
 const emailsByMap = comments.map(comment => comment.email);
 // console.log(emailsByMap);
-//Вывел все(10) email из массива comments в виде массива строк с помощью метода Reduce.
-//Вывел все(10) email из массива comments в виде массива строк с помощью метода Map.
 
 
 //3.12
@@ -91,5 +84,3 @@ const emailsToString = emailsByReduce.toString();
 
 const emailsByJoin = emailsByMap.join(", ");
 // console.log(emailsByJoin);
-//Вывел все(10) email из массива 11 задания в виде одной строки с помощью метода toString.
-//Вывел все(10) email из массива 11 задания в виде одной строки с помощью метода Join.  

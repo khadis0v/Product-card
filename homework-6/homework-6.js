@@ -72,7 +72,6 @@ const libraryCatalog = [
     genre: "классика"
   }
 ];
-// Добавляем новый объект в массив
 libraryCatalog.push({
   title: "Великий Гэтсби",
   author: "Фрэнсис Скотт Фицджеральд",
@@ -109,12 +108,10 @@ const tolkiensUniverse = [
   }
 ];
 
-// Объединяем каталог классики и вселенную Толкина в один большой массив
 const generalLibrary = [...libraryCatalog, ...tolkiensUniverse];
 // console.log(generalLibrary);
 
 
-//Функция с использованием метода map
 const rareBooks = generalLibrary.map(book => {
   return {
     ...book,
